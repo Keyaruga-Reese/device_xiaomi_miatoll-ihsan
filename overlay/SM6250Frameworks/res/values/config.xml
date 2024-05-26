@@ -595,5 +595,7 @@
     <!-- Whether to play turbulence noise after clicking the play button -->
     <bool name="config_turbulenceNoise">false</bool>
 
+     <!-- Switch to AVC 3.1 for screen recording. -->
+    <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
 
 </resources>
