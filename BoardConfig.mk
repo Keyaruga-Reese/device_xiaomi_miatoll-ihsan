@@ -186,7 +186,6 @@ VENDOR_SECURITY_PATCH := 2023-05-01
 # Sepolicy
 include device/voltage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
--include vendor/xiaomi/miuicamera/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Shims
