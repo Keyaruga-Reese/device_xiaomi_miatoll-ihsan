@@ -54,13 +54,13 @@ echo 1 > /proc/sys/kernel/sched_energy_aware
 # configure governor settings for little cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 1000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
 echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
 # configure governor settings for big cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
 echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
-echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
+echo 1000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
 echo 652800 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
 
 # Enable bus-dcvs
