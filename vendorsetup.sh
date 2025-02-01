@@ -3,7 +3,7 @@ end="\033[0m"
 
 # Common DT
 echo -e "${color}Cloning Common DT${end}"
-git clone -b los https://github.com/ihsanulrahman/device_xiaomi_sm6250-common device/xiaomi/sm6250-common
+git clone -b matrixx https://github.com/Keyaruga-Reese/device_xiaomi_sm6250-common-ihsan device/xiaomi/sm6250-common
 
 # Vendor & Kernel Sources
 echo -e "${color}Cloning vendor${end}"

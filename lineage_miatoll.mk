@@ -19,6 +19,14 @@ $(call inherit-product, device/xiaomi/miatoll/device.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Matrixx Flags
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+MATRIXX_CHIPSET := SD720G
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 1080x2400
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_NAME := lineage_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
@@ -29,3 +37,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="miatoll_global-user 12 SKQ1.211019.001 V14.0.3.0.SJZMIXM release-keys" \
     BuildFingerprint=Redmi/miatoll_global/miatoll:12/RKQ1.211019.001/V14.0.3.0.SJZMIXM:user/release-keys
+
+# Sign 
+-include vendor/lineage-priv/keys/keys.mk
